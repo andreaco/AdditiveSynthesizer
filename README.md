@@ -10,8 +10,8 @@ The first oscillator is controlled in frequency by a MIDI input.
 Its gain is controlled in the GUI.
 Both the gain and the frequency of the remaining three oscillators is controlled individually from the GUI.  
 
-Additionally the synthesiser features an amplitude ADSR and a simple reverb.
-
 ***
+
+Additionally the synthesiser features an amplitude ADSR and a simple reverb.
 
 ![](imgs/GUI.png)
