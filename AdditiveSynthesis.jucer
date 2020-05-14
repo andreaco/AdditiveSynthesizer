@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="jIsLr7" name="AdditiveSynthesis" projectType="audioplug"
+              jucerVersion="5.4.7" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              pluginFormats="buildStandalone,buildVST3" bundleIdentifier="com.groupsix.AdditiveSynthesis"
+              pluginManufacturer="groupsix" aaxIdentifier="com.groupsix.AdditiveSynthesis">
+  <MAINGROUP id="eqfNB9" name="AdditiveSynthesis">
+    <GROUP id="{D7905D70-CF83-2554-62D0-7644EA24D90D}" name="Resources">
+      <GROUP id="{F162F526-F7AB-F526-B605-CBF4B7898A1A}" name="ICNS">
+        <FILE id="OQUBdb" name="iconV2_128.png" compile="0" resource="1" file="Resources/ICNS/iconV2_128.png"/>
+        <FILE id="sB3M5F" name="iconV2_384.png" compile="0" resource="1" file="Resources/ICNS/iconV2_384.png"/>
+        <FILE id="JIvLLQ" name="iconV2_256.png" compile="0" resource="1" file="Resources/ICNS/iconV2_256.png"/>
+        <FILE id="NrhM1b" name="iconV2_512.png" compile="0" resource="1" file="Resources/ICNS/iconV2_512.png"/>
+      </GROUP>
+      <FILE id="bkXkYu" name="BakersfieldBold.ttf" compile="0" resource="1"
+            file="Resources/BakersfieldBold.ttf"/>
+      <FILE id="qyHLmj" name="BakersfieldLight.ttf" compile="0" resource="1"
+            file="Resources/BakersfieldLight.ttf"/>
+      <FILE id="sdG7PH" name="modernbg.png" compile="0" resource="1" file="Resources/modernbg.png"/>
+    </GROUP>
+    <GROUP id="{2569C8FF-38EE-0990-2319-0857970C38FD}" name="Source">
+      <GROUP id="{9C0B3729-633F-2D34-EA41-C785712BF4CA}" name="GUI">
+        <FILE id="qpZyXG" name="ADSRComponent.h" compile="0" resource="0" file="Source/ADSRComponent.h"/>
+        <FILE id="KlkCRB" name="MasterComponent.h" compile="0" resource="0"
+              file="Source/MasterComponent.h"/>
+        <FILE id="MhKTIt" name="OscillatorsComponent.h" compile="0" resource="0"
+              file="Source/OscillatorsComponent.h"/>
+        <FILE id="iE5XEW" name="PluginEditor.cpp" compile="1" resource="0"
+              file="Source/PluginEditor.cpp"/>
+        <FILE id="ZxNgDP" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+        <FILE id="H1w95r" name="ReverbComponent.h" compile="0" resource="0"
+              file="Source/ReverbComponent.h"/>
+      </GROUP>
+      <GROUP id="{9B45A736-3934-1F6F-E3AB-3E2CAF1F80B8}" name="LookAndFeels">
+        <FILE id="KvkplR" name="OscLookAndFeel.cpp" compile="1" resource="0"
+              file="Source/OscLookAndFeel.cpp"/>
+        <FILE id="Z8KeYQ" name="OscLookAndFeel.h" compile="0" resource="0"
+              file="Source/OscLookAndFeel.h"/>
+        <FILE id="C49EkT" name="SimpleLookAndFeel.cpp" compile="1" resource="0"
+              file="Source/SimpleLookAndFeel.cpp"/>
+        <FILE id="ZPMayT" name="SimpleLookAndFeel.h" compile="0" resource="0"
+              file="Source/SimpleLookAndFeel.h"/>
+      </GROUP>
+      <FILE id="xsdmIJ" name="ID_APVTS.h" compile="0" resource="0" file="Source/ID_APVTS.h"/>
+      <FILE id="esEMdc" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="AWion7" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="pb1wPi" name="SynthVoice.h" compile="0" resource="0" file="Source/SynthVoice.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019" smallIcon="OQUBdb" bigIcon="NrhM1b">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+    <XCODE_MAC targetFolder="Builds/MacOSX" smallIcon="OQUBdb" bigIcon="NrhM1b">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_opengl" path="../../juce"/>
+        <MODULEPATH id="juce_gui_extra" path="../../juce"/>
+        <MODULEPATH id="juce_gui_basics" path="../../juce"/>
+        <MODULEPATH id="juce_graphics" path="../../juce"/>
+        <MODULEPATH id="juce_events" path="../../juce"/>
+        <MODULEPATH id="juce_data_structures" path="../../juce"/>
+        <MODULEPATH id="juce_cryptography" path="../../juce"/>
+        <MODULEPATH id="juce_core" path="../../juce"/>
+        <MODULEPATH id="juce_audio_utils" path="../../juce"/>
+        <MODULEPATH id="juce_audio_processors" path="../../juce"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../juce"/>
+        <MODULEPATH id="juce_audio_formats" path="../../juce"/>
+        <MODULEPATH id="juce_audio_devices" path="../../juce"/>
+        <MODULEPATH id="juce_audio_basics" path="../../juce"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+    <OSX/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_VST3_CAN_REPLACE_VST2="0" JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+</JUCERPROJECT>
