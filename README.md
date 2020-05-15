@@ -1,5 +1,5 @@
-# Additive Synthesis
-Additive Synthesiser made using the JUCE Framework.  
+# Additive Synthesizer
+Additive Synthesizer made using the JUCE Framework.  
 
 ***
 
@@ -12,6 +12,6 @@ Both the gain and the frequency of the remaining three oscillators is controlled
 
 ***
 
-Additionally the synthesiser features an amplitude ADSR and a simple reverb.
+Additionally the synthesizer features an amplitude ADSR and a simple reverb.
 
 ![](imgs/GUI.png)
