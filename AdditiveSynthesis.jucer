@@ -4,7 +4,7 @@
               jucerVersion="5.4.7" pluginCharacteristicsValue="pluginIsSynth"
               pluginFormats="buildStandalone,buildVST3" bundleIdentifier="com.groupsix.AdditiveSynthesis"
               pluginManufacturer="groupsix" aaxIdentifier="com.groupsix.AdditiveSynthesis"
-              pluginVST3Category="Synth">
+              pluginVST3Category="Synth" companyName="groupsix">
   <MAINGROUP id="eqfNB9" name="AdditiveSynthesis">
     <GROUP id="{D7905D70-CF83-2554-62D0-7644EA24D90D}" name="Resources">
       <GROUP id="{F162F526-F7AB-F526-B605-CBF4B7898A1A}" name="ICNS">
