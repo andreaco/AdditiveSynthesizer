@@ -39,6 +39,7 @@ public:
     {
         /// Frequency reset
         freq0 = MidiMessage::getMidiNoteInHertz (midiNoteNumber);
+        smoothFreq0 = freq0;
         smoothFreq1 = freq0 * *freq1Parameter;
         smoothFreq2 = freq0 * *freq2Parameter;
         smoothFreq3 = freq0 * *freq3Parameter;
