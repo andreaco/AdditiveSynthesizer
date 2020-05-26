@@ -14,4 +14,8 @@ Both the gain and the frequency of the remaining three oscillators is controlled
 
 Additionally the synthesizer features an amplitude ADSR and a simple reverb.
 
-![](imgs/GUI.png)
+![GUI](imgs/GUI.png)  
+
+
+## Video Demo  
+[![Watch the video](https://img.youtube.com/vi/WbkhjxVmeeo/maxresdefault.jpg)](https://youtu.be/WbkhjxVmeeo)
