@@ -82,7 +82,7 @@ AdditiveSynthesisAudioProcessor::AdditiveSynthesisAudioProcessor() :
     revDryWetParameter = apvts.getRawParameterValue(ID_REVDRWE);
     
     /// Synth Initialisation
-    auto maxNum = 4;
+    auto maxNum = 12;
     for (int i = 0; i < maxNum; i++)
     {
         synth.addVoice (new SynthVoice(apvts));

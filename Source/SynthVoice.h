@@ -33,6 +33,8 @@ public:
         decayParameter   = apvts.getRawParameterValue (ID_DEC);
         sustainParameter = apvts.getRawParameterValue (ID_SUS);
         releaseParameter = apvts.getRawParameterValue (ID_REL);
+        
+        adsr.setSampleRate(getSampleRate());
     };
 
     void startNote (int midiNoteNumber, float velocity, SynthesiserSound*, int) override
@@ -55,14 +57,13 @@ public:
            *attackParameter,
            *decayParameter,
            *sustainParameter,
-           *releaseParameter
+           *releaseParameter 
         });
         adsr.noteOn();
     }
     
     void stopNote (float velocity, bool allowTailOff) override
     {
-        clearCurrentNote();
         adsr.noteOff();
     }
     
