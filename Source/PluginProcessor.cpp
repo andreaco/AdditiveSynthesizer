@@ -53,7 +53,7 @@ AdditiveSynthesisAudioProcessor::AdditiveSynthesisAudioProcessor() :
                                                    "Decay",
                                                    0.01f,
                                                    1.00f,
-                                                   0.10f),
+                                                   0.4f),
             std::make_unique<AudioParameterFloat> (ID_SUS,
                                                    "Sustain",
                                                    0.00f,
@@ -95,7 +95,7 @@ AdditiveSynthesisAudioProcessor::AdditiveSynthesisAudioProcessor() :
                             0.5f,
              *revDryWetParameter,
       1.0f - *revDryWetParameter,
-                            1.0f,
+                            0.1f,
                             0.0f,
     });
     
@@ -132,9 +132,10 @@ void AdditiveSynthesisAudioProcessor::processBlock (AudioBuffer<float>& buffer, 
                             0.5f,
              *revDryWetParameter,
       1.0f - *revDryWetParameter,
-                            1.0f,
+                            0.1f,
                             0.0f,
     });
+    
     reverb.processStereo (buffer.getWritePointer (0), buffer.getWritePointer (1), buffer.getNumSamples());
     
     /// Gain stage
